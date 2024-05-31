@@ -1,0 +1,41 @@
+@keyframes fadeInAndColorChange {
+    0% {
+        opacity: 0;
+        color: red;
+    }
+    25% {
+        opacity: 0.5;
+        color: orange;
+    }
+    50% {
+        opacity: 1;
+        color: yellow;
+    }
+    75% {
+        opacity: 1;
+        color: green;
+    }
+    100% {
+        opacity: 1;
+        color: blue;
+    }
+}
+
+.animated-text {
+    animation: fadeInAndColorChange 3s ease-in-out infinite;
+}
+
+.container {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+input, select, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
